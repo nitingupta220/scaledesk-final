@@ -1,0 +1,417 @@
+
+
+/*
+
+Brand Color - #ff694c
+
+*/
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: #565a5c;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    font-size: 110%;
+}
+
+
+/* =====================================================================================================================
+                                            Navigation Section
+   =================================================================================================================== */
+
+
+.custom-navbar{
+    margin: 0;
+    height: 80px;
+    z-index: 1;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+
+/* =====================================================================================================================
+                                            Navigation Section
+   =================================================================================================================== */
+
+#hero-section{
+    background: -webkit-linear-gradient(left ,#f2f2f2 50%,#ff694c 50%);
+}
+
+
+#hero-section .main-title{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+}
+
+
+#hero-section .main-title span:nth-of-type(1):not(:last-of-type){
+    font-weight: 800;
+    display: block;
+    color: #373a5e;
+    padding-left: 13%;
+}
+
+
+#hero-section .main-title span:nth-of-type(1) span{
+    font-weight: 100;
+    color: #fff;
+}
+
+
+
+#hero-section .main-title span:nth-of-type(2){
+    font-weight: 800;
+    color: #373a5e;
+    display: block;
+
+}
+
+
+#hero-section .main-title span:nth-of-type(2) span{
+    font-weight: 100;
+    color: #373a5e;
+}
+
+
+#hero-section .main-title span:nth-of-type(3){
+    font-weight: 100;
+    display: block;
+    padding-left: 13%;
+}
+
+
+
+#hero-section .main-title span:nth-of-type(3) span{
+    font-weight: 800;
+    color: #fff;
+}
+
+
+
+/* =====================================================================================================================
+                                           What We Do Section
+   =================================================================================================================== */
+
+#what-we-do .sec-title{
+    font-size: 9rem;
+    text-align: left;
+    color: #373a5e;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: .9em;
+
+}
+
+
+#what-we-do .sec-title span:nth-of-type(2){
+    color: #ff694c;
+    font-weight: 100;
+    display: block;
+    text-indent: 30px;
+}
+
+#what-we-do .sec-title span:nth-of-type(2) span{
+    color: #c0c0c0;
+    font-weight: 700;
+}
+
+#what-we-do .what-we-do{
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#what-we-do .what-we-do:hover {
+    fill: #ff694c;
+    stroke: #fff;
+}
+
+
+/* =====================================================================================================================
+                                          Who we are Section
+ ===================================================================================================================*/
+
+
+#who-we-are .sec-title{
+    font-size: 9rem;
+    text-align: right;
+    color: #373a5e;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: .9em;
+
+}
+
+
+#who-we-are .sec-title span:nth-of-type(2){
+    color: #ff694c;
+    font-weight: 100;
+    display: block;
+}
+
+#who-we-are .sec-title span:nth-of-type(2) span{
+    color: #c0c0c0;
+    font-weight: 700;
+}
+
+
+/* =====================================================================================================================
+                                          Our Process Section
+ ===================================================================================================================*/
+
+#our-process .sec-title-1{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: .9em;
+}
+
+#our-process .sec-title-1 > span{
+    color: #ff694c;
+    display: block;
+    text-indent: 200px;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+
+/* =====================================================================================================================
+                                          Our Portfolio Section
+ ===================================================================================================================*/
+
+#portfolio .sec-title-1{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: .9em;
+}
+
+#portfolio .sec-title-1 > span{
+    color: #ff694c;
+    display: block;
+    text-indent: 200px;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+.img-gallery{
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0;
+    -moz-column-count: 3;
+    -moz-column-gap: 0;
+        column-count: 3;
+        column-gap: 0;
+        height: 600px;
+        overflow: hidden;
+}
+
+
+.img-gallery .main-container > img{
+    width: 100%!important;
+    height: auto!important;
+}
+
+
+.img-gallery .main-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.img-gallery .main-container > .overlay-txt:nth-of-type(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*opacity: 0;*/
+    line-height: 1.6em;
+    color: #fff;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    height: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    transform-origin: top;
+}
+
+
+.img-gallery .main-container > .overlay-txt:nth-of-type(2){
+    top: 0;
+    right: 0;
+}
+
+
+.img-gallery .main-container > .overlay-txt p {
+    font-size: 12px;
+}
+
+
+
+.img-gallery .main-container:hover .overlay-txt:nth-of-type(1){
+    height: 100%;
+    background-color: #ff694c;
+    padding: 20px;
+}
+
+
+
+.img-gallery .main-container .overlay-txt > div > ul{
+    padding: 0;
+}
+
+
+.img-gallery .main-container .overlay-txt > div > ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+}
+
+
+
+.img-gallery .main-container .overlay-txt > div > ul > li > a > img{
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .img-gallery{
+        line-height: 0;
+        -webkit-column-count: 3;
+        -webkit-column-gap: 0;
+        -moz-column-count: 3;
+        -moz-column-gap: 0;
+        column-count: 3;
+        column-gap: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .img-gallery{
+        line-height: 0;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 0;
+        -moz-column-count: 2;
+        -moz-column-gap: 0;
+        column-count: 2;
+        column-gap: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+    .img-gallery{
+        line-height: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        column-count: 1;
+        column-gap: 0;
+    }
+
+}
+
+
+
+/* =====================================================================================================================
+                                          Contact Section
+ ===================================================================================================================*/
+
+#contact .contact-bg {
+    background: url('../img/contact-bg.png') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* =====================================================================================================================
+                                            Footer Section
+ ===================================================================================================================*/
+
+
+#footer .footer-bg {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footer .footer-bg .social-icons{
+    padding: 0;
+}
+
+
+#footer .footer-bg .social-icons li{
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+#footer .footer-bg .social-icons li a{
+    color: #999;
+    font-size: 20px;
+}
+
+#footer .footer-bg p {
+    margin-top: 30px;
+}
+
+
+#footer .footer-bg p a {
+    color: #999;
+}
