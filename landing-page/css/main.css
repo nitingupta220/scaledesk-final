@@ -20,6 +20,9 @@ body{
     font-size: 16px;
 }
 
+.brand-c{
+    color: #ff694c;
+}
 
 /* =====================================================================================================================
                                             Navigation Section
@@ -35,21 +38,39 @@ body{
     background: transparent;
 }
 
+.custom-navbar .navbar-right li a{
+    display: block;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    color: #565a5c;
+    background-color: #fff;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    border-radius: 20px;
 
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+    background-color: #fff;
+}
 /* =====================================================================================================================
                                             Navigation Section
    =================================================================================================================== */
 
 #hero-section{
     background: -webkit-linear-gradient(left ,#f2f2f2 50%,#ff694c 50%);
+    height: 100vh;
 }
 
 
 #hero-section .main-title{
-    font-size: 9rem;
+    font-size: 6rem;
     text-align: center;
     color: #373a5e;
     text-transform: uppercase;
+    padding-top: 10%;
 }
 
 
@@ -57,7 +78,7 @@ body{
     font-weight: 800;
     display: block;
     color: #373a5e;
-    padding-left: 13%;
+    margin-left: -1.2%;
 }
 
 
@@ -72,6 +93,7 @@ body{
     font-weight: 800;
     color: #373a5e;
     display: block;
+    margin-left: -5.2%;
 
 }
 
@@ -85,13 +107,15 @@ body{
 #hero-section .main-title span:nth-of-type(3){
     font-weight: 100;
     display: block;
-    padding-left: 13%;
+    margin-left: 8%;
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
 
 
 #hero-section .main-title span:nth-of-type(3) span{
-    font-weight: 800;
+    font-weight: 100;
     color: #fff;
 }
 
@@ -116,43 +140,264 @@ body{
 }
 
 
-/* =====================================================================================================================
-                                           What We Do Section
-   =================================================================================================================== */
 
-#what-we-do .sec-title{
-    font-size: 9rem;
-    text-align: left;
-    color: #373a5e;
+#hero-section .form-container{
+    margin-top: 40px;
+}
+
+#hero-section .form-container h4 {
     text-transform: uppercase;
-    font-weight: 800;
-    line-height: .9em;
+    font-size: 17px;
+    letter-spacing: .3px;
+}
+
+#hero-section .form-container h4:first-of-type{
+    color: #373a5e;
 
 }
 
-
-#what-we-do .sec-title span:nth-of-type(2){
+#hero-section .form-container h4:last-of-type{
     color: #ff694c;
-    font-weight: 100;
-    display: block;
-    text-indent: 30px;
 }
 
-#what-we-do .sec-title span:nth-of-type(2) span{
-    color: #c0c0c0;
-    font-weight: 700;
+
+#hero-section .form-container .form-group input{
+    height: 40px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
 }
 
-#what-we-do .what-we-do{
-    cursor: pointer;
+
+
+#hero-section .form-container .form-group:nth-of-type(1) input{
+    width: 100%;
+}
+
+#hero-section .form-container .form-group:nth-of-type(2) input{
+    width: 90%;
+}
+
+#hero-section .form-container .form-group:nth-of-type(3) input{
+    width: 80%;
+}
+
+#hero-section .form-container .form-group:nth-of-type(4) button{
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff694c;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+
+
+#hero-section .form-container .form-group input:focus{
+    outline: none;
+}
+
+/* =====================================================================================================================
+                                           Pricing table
+   =================================================================================================================== */
+#pricing-table .container{
+    padding: 0 10%;
+}
+
+#pricing-table{
+    padding: 4% 4%;
+}
+
+#pricing-table .sec-title{
+    color: #373a5e;
+}
+
+
+#pricing-table ul {
+    padding: 0;
+    text-align: center;
+}
+
+#pricing-table ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+#pricing-table ul li .pricing-box {
+    width: 260px;
+    max-width: 100%;
+    margin: 10px 5px auto;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 1px #eee;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    padding: 20px 0;
+    text-decoration: none;
     transition: all .4s ease-in-out;
 }
 
-
-#what-we-do .what-we-do:hover {
-    fill: #ff694c;
-    stroke: #fff;
+#pricing-table ul li .pricing-box figure h3{
+    font-size: 18px;
 }
+
+
+#pricing-table ul li .pricing-box figure h2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #373a5e;
+    color: #fff;
+}
+
+
+
+#pricing-table ul li:nth-of-type(2) .pricing-box figure h2{
+    background-color: #fff;
+    color: #373a5e;
+}
+
+
+#pricing-table ul li:nth-of-type(3) .pricing-box figure h2{
+    background-color: #373a5e;
+    color: #fff;
+
+}
+
+
+
+#pricing-table ul li .pricing-box figure h2 i{
+    font-size: 20px;
+
+}
+
+#pricing-table ul li:nth-of-type(2) .pricing-box {
+    padding: 40px 0 70px;
+}
+
+
+#pricing-table ul li .pricing-box.active {
+    background-color: #ff694c;
+    color: #fff;
+}
+
+
+
+#pricing-table ul li .pricing-box button.active {
+    background-color: #fff;
+    color: #ff694c;
+}
+
+
+
+#pricing-table ul li .pricing-box figcaption>p {
+    margin: 0;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+#pricing-table ul li .pricing-box button {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: #ff694c;
+    color: #fff;
+}
+
+#pricing-table ul li .pricing-box button:focus {
+    outline: none;
+}
+
+
+#detailed-services .container{
+    padding: 10%;
+}
+
+#detailed-services .container .row:not(:first-of-type){
+    margin: 15% 0;
+}
+
+#detailed-services .container h3 {
+    margin: 20px 0;
+    color: #373a5e;
+}
+
+#detailed-services .container p {
+    color: #797979;
+    font-size: 15px;
+    word-spacing: 4px;
+    line-height: 1.8em;
+}
+
+
+
+.d-service-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 100px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 7px rgba(0,0,0,0.30), 0 4px 5px rgba(0,0,0,0.22);
+
+}
+
+.d-service-icon img{
+    width: 60px;
+    height: auto;
+}
+
+.d-service-icon:nth-of-type(2) {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.d-service-icon:nth-of-type(3) {
+    display: inline-block;
+}
+
+.d-service-icon:nth-of-type(1):before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 80px;
+    z-index: -1;
+    left: 0;
+    transform: rotate(25deg);
+    border: 2px dashed #999;
+}
+
+.d-service-icon:nth-of-type(1):after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 80px;
+    z-index: -1;
+    right: 0;
+    transform: rotate(-25deg);
+    border: 2px dashed #999;
+}
+
+
 
 
 /* =====================================================================================================================
@@ -184,23 +429,52 @@ body{
 
 
 /* =====================================================================================================================
-                                          Our Process Section
+                                          Clients Section
  ===================================================================================================================*/
+#clients .container{
+    padding: 10%;
+}
 
-#our-process .sec-title-1{
-    font-size: 9rem;
+
+#clients .owl-carousel{
+    margin-top: 60px;
+}
+
+#clients .owl-carousel .item img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+#clients .owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+
+#clients .owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+
+
+
+#clients .sec-title-1{
+    font-size: 6rem;
     text-align: center;
-    color: #373a5e;
+    color: #ff694c;
     text-transform: uppercase;
     font-weight: 800;
     line-height: .9em;
 }
 
-#our-process .sec-title-1 > span{
-    color: #ff694c;
+#clients .sec-title-1 > span{
+    color: #373a5e;
     display: block;
     text-indent: 200px;
-    font-size: 5.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 40px;
 }
@@ -221,6 +495,56 @@ body{
     }
 
 }
+
+
+
+#clients .container-fluid {
+    background-color: #f2f1f1;
+
+}
+
+
+#clients .container-fluid .features-heading{
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+#clients .container-fluid .features-heading {
+    padding: 30px 0 0;
+}
+
+#clients .container-fluid .features-heading h3{
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+#clients .container-fluid .features-heading p{
+    margin: 30px 0;
+}
+
+
+#clients .container-fluid .sub-features{
+    background-color: #f6f6f8;
+    margin: 0px -15px;
+    padding: 25px;
+    color: #565a5c;
+
+}
+
+#clients .container-fluid .sub-features p{
+    margin: 40px 0;
+}
+
+
+
+
 
 
 /* =====================================================================================================================
@@ -275,7 +599,6 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    /*opacity: 0;*/
     line-height: 1.6em;
     color: #fff;
     text-align: center;
