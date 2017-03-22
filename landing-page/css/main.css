@@ -13,6 +13,7 @@ Brand Color - #ff694c
    ========================================================================== */
 html{
     overflow-x: hidden;
+    font-size: 62.5%;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
     color: #565a5c;
     line-height: 1.6em;
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 1.4rem;
 }
 
 .brand-c{
@@ -43,6 +44,8 @@ header {
 
 .nav-up {
     top: -60px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    background-color: #fff;
 }
 
 
@@ -51,12 +54,13 @@ header {
     height: 80px;
     z-index: 1;
     border: 0;
-    background: #fff;
     position: fixed;
     top: 0;
-    transition: all .4s ease-in-out;
+    transition: top .4s ease-in;
     width: 100%;
+    background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+
 }
 
 
@@ -94,6 +98,8 @@ header {
 
     .nav-up{
         top: -110px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+        background-color: #fff;
     }
 
 
@@ -202,7 +208,7 @@ header {
 
 #hero-section .form-container h4 {
     text-transform: uppercase;
-    font-size: 17px;
+    font-size: 13px;
     letter-spacing: .3px;
 }
 
@@ -363,8 +369,8 @@ header {
 }
 
 #pricing-table ul li .pricing-box {
-    width: 260px;
-    max-width: 100%;
+    max-width: 260px;
+    width: 100%;
     margin: 10px 5px auto;
     border: 1px solid #eee;
     border-radius: 10px;
@@ -377,9 +383,9 @@ header {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
     text-decoration: none;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 #pricing-table ul li .pricing-box figure h3{
@@ -421,14 +427,12 @@ header {
 
 }
 
-#pricing-table ul li:nth-of-type(2) .pricing-box {
-    padding: 40px 0 70px;
-}
 
 
 #pricing-table ul li .pricing-box.active {
     background-color: #ff694c;
     color: #fff;
+    padding: 60px 40px 100px;
 }
 
 
@@ -437,6 +441,12 @@ header {
     background-color: #fff;
     color: #ff694c;
 }
+
+
+#pricing-table ul li .pricing-box:hover {
+    transform: scale(1.02);
+}
+
 
 
 
@@ -1030,23 +1040,6 @@ header {
 
 /* ---- .element-item ---- */
 
-/* 5 columns, percentage width */
-.grid-item,
-.grid-sizer {
-    width: 20%;
-}
-
-.grid-item {
-    float: left;
-    height: 100px;
-    background: #0D8;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.7);
-}
-
-.grid-item--width2 { width: 40%; }
-.grid-item--height2 { height: 200px; }
-
 
 #portfolio.demo li {
     list-style-type: none;
@@ -1133,6 +1126,7 @@ header {
     background-color: rgba(162, 68, 49, 0.71);
     padding: 60px 30px;
     max-width: 500px;
+    min-width: 335px;
     margin: 20px auto;
     border-radius: 8px;
     color: #fff;
@@ -1224,4 +1218,5 @@ header {
     color: #999;
     font-weight: 300;
 }
+
 

@@ -46,7 +46,7 @@ function hasScrolled() {
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('nav').removeClass('nav-up').addClass('custom-nav');
+            $('nav').removeClass('nav-up').addClass('custom-nav ');
         }
     }
 
