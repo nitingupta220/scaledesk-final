@@ -22,6 +22,10 @@ body{
     line-height: 1.6em;
     overflow-x: hidden;
     font-size: 1.4rem;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed;
 }
 
 .brand-c{
@@ -58,11 +62,14 @@ header {
     top: 0;
     transition: top .4s ease-in;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
+    /*background-color: #fff;*/
+    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);*/
 
 }
 
+.navbar-default{
+    background-color: transparent;
+}
 
 
 
@@ -119,6 +126,20 @@ header {
     height: 100vh;
 }
 
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+
+    #hero-section{
+        display: -webkit-flex;
+        display: -moz-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+    }
+}
+
 
 #hero-section .main-title{
     font-size: 6rem;
@@ -146,7 +167,7 @@ header {
 
 #hero-section .main-title span:nth-of-type(2){
     font-weight: 800;
-    color: #373a5e;
+    color: #ff694c;
     display: block;
     margin-left: -5.2%;
 
@@ -160,7 +181,7 @@ header {
 
 
 #hero-section .main-title span:nth-of-type(3){
-    font-weight: 100;
+    font-weight: 300;
     display: block;
     margin-left: 8%;
     font-size: 2.5rem;
@@ -170,7 +191,7 @@ header {
 
 
 #hero-section .main-title span:nth-of-type(3) span{
-    font-weight: 100;
+    font-weight: 300;
     color: #fff;
 }
 
@@ -234,25 +255,26 @@ header {
 
 
 #hero-section .form-container .form-group:nth-of-type(1) input{
-    width: 100%;
-}
-
-#hero-section .form-container .form-group:nth-of-type(2) input{
     width: 90%;
 }
 
-#hero-section .form-container .form-group:nth-of-type(3) input{
+#hero-section .form-container .form-group:nth-of-type(2) input{
     width: 80%;
 }
 
-#hero-section .form-container .form-group:nth-of-type(4) button{
+#hero-section .form-container .form-group:nth-of-type(3) input{
     width: 70%;
+}
+
+#hero-section .form-container .form-group:nth-of-type(4) button{
+    width: 60%;
     border-radius: 20px;
     border: none;
     background-color: #ff694c;
     height: 40px;
     line-height: 40px;
     color: #fff;
+    font-size: 1.6rem;
 }
 
 
@@ -269,6 +291,17 @@ header {
 #services .container {
     padding: 10% 8% 10% 10%;
 }
+
+
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+
+    #services .container{
+        padding: 5% 0;
+    }
+}
+
+
+
 
 #services .service-container{
     padding: 0;
@@ -333,6 +366,16 @@ header {
     margin-top: 20px;
 }
 
+
+#services .service figure figcaption svg {
+    margin-bottom: -5px;
+}
+
+#services .service figure figcaption > span {
+    color: #4cae4c;
+}
+
+
 #services .service:hover {
     /* box-shadow: 0px 0px 22px #eee, inset 0px 1px 2px 5px #eee; */
     /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2); */
@@ -348,6 +391,16 @@ header {
 #pricing-table .container{
     padding: 0 10%;
 }
+
+
+
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+
+    #pricing-table .container{
+        padding: 5% 0;
+    }
+}
+
 
 #pricing-table{
     padding: 4% 4%;
@@ -432,7 +485,7 @@ header {
 #pricing-table ul li .pricing-box.active {
     background-color: #ff694c;
     color: #fff;
-    padding: 60px 40px 100px;
+    padding: 60px 20px 100px;
 }
 
 
@@ -452,7 +505,7 @@ header {
 
 #pricing-table ul li .pricing-box figcaption>p {
     margin: 0;
-    line-height: 35px;
+    line-height: 28px;
     font-size: 14px;
 }
 
@@ -472,9 +525,21 @@ header {
 }
 
 
+/*======Detailed Services====*/
+
 #detailed-services .container{
     padding: 10% 10% 0 10%;
 }
+
+
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+
+    #detailed-services .container{
+        padding: 5% 0;
+    }
+}
+
+
 
 #detailed-services .container .row:not(:first-of-type){
     margin: 15% 0 5%;
@@ -483,12 +548,14 @@ header {
 #detailed-services .container h3 {
     margin: 20px 0;
     color: #373a5e;
+    font-weight: 700;
 }
 
 #detailed-services .container p {
     color: #797979;
     font-size: 15px;
     word-spacing: 4px;
+    line-height: 2.7rem;
 }
 
 
@@ -513,7 +580,7 @@ header {
 
 .d-service-icon:nth-of-type(2) {
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 75px;
 }
 
 .d-service-icon:nth-of-type(3) {
@@ -527,7 +594,7 @@ header {
     top: 80px;
     z-index: -1;
     left: 0;
-    transform: rotate(25deg);
+    transform: rotate(33deg);
     border: 2px dashed #999;
 }
 
@@ -538,7 +605,7 @@ header {
     top: 80px;
     z-index: -1;
     right: 0;
-    transform: rotate(-25deg);
+    transform: rotate(-33deg);
     border: 2px dashed #999;
 }
 
@@ -552,6 +619,17 @@ header {
 #our-features .container{
     padding: 10% 8% 0 10%;
 }
+
+
+
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+
+    #our-features .container{
+        padding: 5% 0;
+    }
+}
+
+
 
 #our-features ul{
     padding: 0;
@@ -576,37 +654,6 @@ header {
 }
 
 
-/*#our-features .feature-icon{*/
-    /*position: relative;*/
-    /*width: 100px;*/
-    /*height: 70px;*/
-    /*background-color: #f9f9f9;*/
-    /*margin: 0 auto;*/
-    /*margin-bottom: 30px;*/
-    /*margin-top: -35px;*/
-
-/*}*/
-
-/*#our-features .feature-icon:before,*/
-/*#our-features .feature-icon:after {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*width: 0;*/
-    /*border-right: 50px solid transparent;*/
-    /*border-left: 50px solid transparent;*/
-    /*left: 0;*/
-/*}*/
-
-/*#our-features .feature-icon:before{*/
-    /*bottom: 100%;*/
-    /*border-bottom: 20px solid #f9f9f9;*/
-/*}*/
-
-/*#our-features .feature-icon:after{*/
-    /*top: 100%;*/
-    /*border-top: 20px solid #f9f9f9;*/
-/*}*/
-
 #our-features .feature-container{
     width: 280px;
     max-width: 100%;
@@ -630,8 +677,9 @@ header {
 }
 
 #our-features .feature-container .features-txt h4{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
+    color: #ff6a4d;
 }
 
 /* =====================================================================================================================
@@ -775,6 +823,12 @@ header {
     padding: 10% 0 5% 0;
 }
 
+@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+    #portfolio {
+        padding: 5% 0 0 0;
+    }
+
+}
 
 
 .img-gallery{
