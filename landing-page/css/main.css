@@ -131,6 +131,20 @@ header {
     height: 100vh;
 }
 
+
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #hero-section{
+        display: -webkit-flex;
+        display: -moz-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+    }
+}
+
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
 
     #hero-section{
@@ -298,6 +312,13 @@ header {
 }
 
 
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #services .container {
+        padding: 2%;
+    }
+
+}
+
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
 
     #services .container{
@@ -397,6 +418,13 @@ header {
     padding: 0 10%;
 }
 
+
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #pricing-table .container {
+        padding: 2%;
+    }
+
+}
 
 
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
@@ -536,6 +564,14 @@ header {
     padding: 10% 10% 0 10%;
 }
 
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #detailed-services .container {
+        padding: 2%;
+    }
+
+}
+
+
 
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
 
@@ -624,6 +660,14 @@ header {
 
 #our-features .container{
     padding: 10% 8% 0 10%;
+}
+
+
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #our-features .container {
+        padding: 2%;
+    }
+
 }
 
 
@@ -828,6 +872,15 @@ header {
 #portfolio {
     padding: 10% 0 5% 0;
 }
+
+
+@media screen  and (min-width: 768px) and (max-width: 1024px) {
+    #portfolio {
+        padding: 2%;
+    }
+
+}
+
 
 @media screen  and (min-width: 1900px) and (max-width: 2500px) {
     #portfolio {
