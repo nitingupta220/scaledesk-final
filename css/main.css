@@ -77,8 +77,8 @@ section{
 
 
 #hero-section .main-title span:nth-of-type(2){
-    font-weight: 800;
-    color: #373a5e;
+    font-weight: 300;
+    color: #ff694c;
     display: block;
 
 }
@@ -91,17 +91,18 @@ section{
 
 
 #hero-section .main-title span:nth-of-type(3){
-    font-weight: 100;
+    font-weight: 800;
     display: block;
-    padding-left: 13%;
+    margin-left: 13.2%;
 }
 
 
 
 #hero-section .main-title span:nth-of-type(3) span{
-    font-weight: 800;
+    font-weight: 100;
     color: #fff;
 }
+
 
 @media screen and (max-width: 600px) {
     #hero-section .main-title{
@@ -117,6 +118,7 @@ section{
     #hero-section .main-title span{
         padding: 0!important;
         line-height: 75px;
+        margin: 0!important;
     }
 
 
@@ -628,7 +630,7 @@ section{
 }
 
 
-#service-des .container .main-tab-container{
+#services > #service-des .container .main-tab-container{
     margin-top: 10%;
 
 }
@@ -663,7 +665,7 @@ section{
 
 
 
-#service-des .container .form-container {
+.container .form-container {
     width: 350px;
     max-width: 100%;
     max-height: 100%;
@@ -678,13 +680,13 @@ section{
 }
 
 
-#service-des .container .form-container h3 {
+.container .form-container h3 {
     margin: 30px 30px 60px 5px;
     text-align: left;
 }
 
 
-#service-des .container .form-container button {
+.container .form-container button {
     width: 150px;
     height: 40px;
     line-height: 40px;
@@ -772,3 +774,266 @@ section{
     font-weight: 700;
     color: #373a5e;
 }
+
+
+
+/* ==========================================================================
+   Services Features
+   ========================================================================== */
+
+#service-portfolio .port-effect{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+
+}
+
+#service-portfolio .port-effect img {
+    transition: .3s ease-in-out;
+    transform: scale(1);
+
+}
+
+#service-portfolio .port-effect .port-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ff694c;
+    transition: .3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;7
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    transform-origin: right;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    right: -100%;
+}
+
+
+#service-portfolio .port-effect:hover .port-overlay  {
+    right: 0;
+    height: 100%;
+}
+
+#service-portfolio .port-effect:hover img  {
+    transform: scale(1.3);
+}
+
+
+/* =====================================================================================================================
+
+
+ Thank you page Starts Here
+
+
+ ===================================================================================================================*/
+
+#thankyou section#hero-section{
+    height: 60vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+
+#thankyou .main-title{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+}
+
+
+#thankyou .main-title span:nth-of-type(1):not(:last-of-type){
+    font-weight: 800;
+    display: block;
+    color: #373a5e;
+    margin-left: -7%;
+}
+
+
+#thankyou .main-title span:nth-of-type(1) span{
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+#thankyou .main-title span:nth-of-type(2){
+    font-weight: 800;
+    color: #373a5e;
+    display: block;
+    margin-left: -5%;
+
+}
+
+
+#thankyou .main-title span:nth-of-type(2) span{
+    font-weight: 800;
+    color: #373a5e;
+}
+
+
+#thankyou .main-title span:nth-of-type(3){
+    font-weight: 800;
+    display: block;
+    margin-left: -13.8%;
+}
+
+
+
+#thankyou .main-title span:nth-of-type(3) span{
+    font-weight: 100;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    #thankyou .main-title{
+        font-size: 7rem;
+        text-align: left;
+        color: #373a5e;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px;
+        margin: 0;
+    }
+
+    #thankyou .main-title span{
+        padding: 0!important;
+        line-height: 75px;
+        margin: 0!important;
+    }
+
+
+
+}
+
+
+
+
+/* =====================================================================================================================
+
+
+Contact us page Starts Here
+
+
+ ===================================================================================================================*/
+
+#contact-us section#hero-section{
+    height: 60vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+
+#contact-us .main-title{
+    font-size: 9rem;
+    text-align: center;
+    color: #373a5e;
+    text-transform: uppercase;
+}
+
+
+#contact-us .main-title span:nth-of-type(1):not(:last-of-type){
+    font-weight: 800;
+    display: block;
+    color: #373a5e;
+    margin-left: -9%;
+}
+
+
+#contact-us .main-title span:nth-of-type(1) span{
+    color: #373a5e;
+    font-weight: 800;
+
+}
+
+
+
+#contact-us .main-title span:nth-of-type(2){
+    font-weight: 300;
+    color: #373a5e;
+    display: block;
+    padding-left: 8%;
+
+}
+
+
+#contact-us .main-title span:nth-of-type(2) span{
+    font-weight: 300;
+    color: #373a5e;
+}
+
+
+#contact-us .main-title span:nth-of-type(3){
+    font-weight: 300;
+    display: block;
+    margin-left: 6.2%;
+    color: #ff694c;
+}
+
+
+
+#contact-us .main-title span:nth-of-type(3) span{
+    font-weight: 300;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    #contact-us .main-title{
+        font-size: 7rem;
+        text-align: left;
+        color: #373a5e;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.04);
+        padding: 30px;
+        margin: 0;
+    }
+
+    #contact-us .main-title span{
+        padding: 0!important;
+        line-height: 75px;
+        margin: 0!important;
+    }
+
+
+
+}
+
+
+#map .container {
+    padding: 10%;
+}
+
+
+#contact-us #footer .footer-bg {
+    padding: 10%;
+}
+
+

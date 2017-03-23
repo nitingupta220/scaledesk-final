@@ -92,7 +92,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias culpa dolore itaque perferendis porro? Deleniti deserunt dolor voluptate voluptatem? Aperiam consequatur exercitationem ipsa laboriosam nihil perspiciatis quod tempore? Aspernatur, expedita.</p>
 
 
-                    <img src="img/service-des.jpg" alt="">
+                    <img src="img/service-des.jpg" alt="" class="img-responsive">
                 </div>
             </div> <!--row ends here-->
 
@@ -271,7 +271,7 @@
     <!--------------------------------------------------------------------------------------------------------------
                                             Portfolio
     --------------------------------------------------------------------------------------------------------------->
-    <section id="portfolio">
+    <section id="service-portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -282,12 +282,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
-                        <div class="item">
+                        <div class="item port-effect">
                             <img src="img/zolo.png" alt="" >
+
+                            <div class="port-overlay">
+                                <div>
+                                    <h3>project 1</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deserunt doloribus eaque enim explicabo facilis ipsam itaque libero minima molestiae mollitia nesciunt odit provident quis reiciendis suscipit tempore, voluptas voluptatibus.</p>
+                                </div>
+
+
+                            </div>
+
                         </div>
 
-                        <div class="item">
+                        <div class="item port-effect">
                             <img src="img/advventuria.png" alt="">
+                            <div class="port-overlay">
+                                <div>
+                                    <h3>project 1</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda deserunt doloribus eaque enim explicabo facilis ipsam itaque libero minima molestiae mollitia nesciunt odit provident quis reiciendis suscipit tempore, voluptas voluptatibus.</p>
+                                </div>
+
+
+                            </div>
                         </div>
 
                     </div>
@@ -385,8 +403,25 @@
 
 <script>
     $(document).ready(function(){
-        $(".owl-carousel").owlCarousel();
+        $(".owl-carousel").owlCarousel({
+            loop:true,
+            margin:10,
+
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:2
+                }
+            }
+        });
     });
+
+
 </script>
 
 

@@ -20,8 +20,8 @@ body{
     font-family: 'Raleway', sans-serif;
     color: #565a5c;
     line-height: 1.6em;
-    overflow-x: hidden;
     font-size: 1.4rem;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -311,6 +311,12 @@ header {
     padding: 10% 8% 10% 10%;
 }
 
+@media screen  and (max-width: 600px) {
+    #services .container {
+        padding: 5%;
+    }
+}
+
 
 @media screen  and (min-width: 768px) and (max-width: 1024px) {
     #services .container {
@@ -416,6 +422,14 @@ header {
    =================================================================================================================== */
 #pricing-table .container{
     padding: 0 10%;
+}
+
+
+@media screen  and (max-width: 600px) {
+    #pricing-table .container{
+        padding: 5%;
+    }
+
 }
 
 
@@ -564,6 +578,13 @@ header {
     padding: 10% 10% 0 10%;
 }
 
+@media screen  and (max-width: 600px) {
+    #detailed-services .container{
+        padding: 5%;
+    }
+}
+
+
 @media screen  and (min-width: 768px) and (max-width: 1024px) {
     #detailed-services .container {
         padding: 2%;
@@ -622,7 +643,7 @@ header {
 
 .d-service-icon:nth-of-type(2) {
     display: inline-block;
-    margin-right: 75px;
+    margin-right: 50px;
 }
 
 .d-service-icon:nth-of-type(3) {
@@ -660,6 +681,14 @@ header {
 
 #our-features .container{
     padding: 10% 8% 0 10%;
+}
+
+
+@media screen  and (max-width: 600px) {
+    #our-features .container{
+        padding: 5%;
+    }
+
 }
 
 
@@ -1333,3 +1362,13 @@ header {
 }
 
 
+@media screen and (max-width: 600px) {
+    section {
+        height: 100%!important;
+    }
+
+    .navbar-brand img{
+        width: 100px;
+    }
+
+}
