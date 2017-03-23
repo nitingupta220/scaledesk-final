@@ -42,11 +42,18 @@ function hasScrolled() {
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
-        $('nav').removeClass('custom-nav').addClass('nav-up');
-    } else {
+        $('nav').removeClass('custom-nav').addClass('nav-up').addClass('activet');
+
+    }else if(st <= 0 ){
+        $('nav').removeClass('custom-nav activet');
+
+
+    }
+
+    else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('nav').removeClass('nav-up').addClass('custom-nav ');
+            $('nav').removeClass('nav-up').addClass('custom-nav ').removeClass('activet');
         }
     }
 
