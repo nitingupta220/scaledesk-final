@@ -874,7 +874,7 @@ body{
 
 @media screen and (max-width: 600px) {
     #clients .container-fluid .sub-features{
-        height: 350px;
+        height: 370px;
     }
 
     #clients .carousel-inner>.item .row .col-md-2{
