@@ -37,15 +37,6 @@ body{
    =================================================================================================================== */
 
 
-header {
-    background: #f5b335;
-    height: 40px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-}
-
 .nav-up {
     top: -60px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
@@ -64,7 +55,6 @@ header {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
-
 }
 
 /*.navbar-default{*/
@@ -79,16 +69,17 @@ header {
 
 
 .custom-nav .navbar-right li a,
-.custom-nav .navbar-left li a{
+.custom-nav .navbar-left li a,
+.phone{
 
     display: block;
     width: 170px;
     height: 40px;
-    line-height: 40px;
+    line-height: 40px!important;
     color: #565a5c;
     background-color: #fff;
     text-align: center;
-    padding: 0;
+    padding: 0!important;
     margin-top: 20px;
     border-radius: 20px;
     border: 1px solid #ff694c;
@@ -101,7 +92,8 @@ header {
         margin-top: 10px;
     }
 
-    .custom-nav .navbar-left li a{
+    .custom-nav .navbar-left li a,
+    .phone {
 
         margin-top: -35px;
         margin-right: 10px;
@@ -129,35 +121,43 @@ header {
 #hero-section{
     background: -webkit-linear-gradient(left ,#f2f2f2 50%,#ff694c 50%);
     height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
 }
 
 
-@media screen  and (min-width: 768px) and (max-width: 1024px) {
-    #hero-section{
-        display: -webkit-flex;
-        display: -moz-flex;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        align-items: center;
-    }
-}
+/*@media screen  and (min-width: 768px) and (max-width: 1024px) {*/
+    /*#hero-section{*/
+        /*display: -webkit-flex;*/
+        /*display: -moz-flex;*/
+        /*-webkit-justify-content: center;*/
+        /*-moz-justify-content: center;*/
+        /*justify-content: center;*/
+        /*-webkit-align-items: center;*/
+        /*-moz-align-items: center;*/
+        /*align-items: center;*/
+    /*}*/
+/*}*/
 
-@media screen  and (min-width: 1900px) and (max-width: 2500px) {
+/*@media screen  and (min-width: 1900px) and (max-width: 2500px) {*/
 
-    #hero-section{
-        display: -webkit-flex;
-        display: -moz-flex;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        justify-content: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        align-items: center;
-    }
-}
+    /*#hero-section{*/
+        /*display: -webkit-flex;*/
+        /*display: -moz-flex;*/
+        /*-webkit-justify-content: center;*/
+        /*-moz-justify-content: center;*/
+        /*justify-content: center;*/
+        /*-webkit-align-items: center;*/
+        /*-moz-align-items: center;*/
+        /*align-items: center;*/
+    /*}*/
+/*}*/
 
 
 #hero-section .main-title{
@@ -165,7 +165,7 @@ header {
     text-align: center;
     color: #373a5e;
     text-transform: uppercase;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 
@@ -769,6 +769,14 @@ header {
 }
 
 
+@media screen  and (max-width: 600px) {
+    #clients .container{
+        padding: 5%;
+    }
+
+}
+
+
 #clients .owl-carousel{
     margin-top: 60px;
 }
@@ -1368,7 +1376,8 @@ header {
     }
 
     .navbar-brand img{
-        width: 100px;
+        width: 150px;
+        margin-top: 10px;
     }
 
 }
