@@ -226,14 +226,11 @@ body{
     letter-spacing: .3px;
 }
 
-#hero-section .form-container h4:first-of-type{
+#hero-section .form-container h4{
     color: #373a5e;
 
 }
 
-#hero-section .form-container h4:last-of-type{
-    color: #ff694c;
-}
 
 
 #hero-section .form-container .form-group input{
@@ -259,16 +256,25 @@ body{
     width: 70%;
 }
 
-#hero-section .form-container .form-group:nth-of-type(4) button{
+#hero-section .form-container .form-group:nth-of-type(4) input{
     width: 60%;
     border-radius: 20px;
-    border: none;
     background-color: #ff694c;
     height: 40px;
     line-height: 40px;
     color: #fff;
     font-size: 1.6rem;
+    padding: 0;
+    transition: all .3s ease;
+    border: 1px solid transparent;
 }
+
+#hero-section .form-container .form-group:nth-of-type(4) input:hover{
+    background-color: #fff;
+    border: 1px solid #ff694c;
+    color: #ff694c;
+}
+
 
 
 
@@ -760,6 +766,13 @@ body{
     margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+    #clients .owl-carousel .item img{
+        width: 300px;
+
+    }
+}
+
 #clients .owl-theme .owl-controls .owl-page {
     display: inline-block;
 }
@@ -855,8 +868,22 @@ body{
     margin: 0px -15px;
     padding: 25px;
     color: #565a5c;
-
+    height: 220px;
+    overflow: hidden;
 }
+
+@media screen and (max-width: 600px) {
+    #clients .container-fluid .sub-features{
+        height: 350px;
+    }
+
+    #clients .carousel-inner>.item .row .col-md-2{
+        text-align: center!important;
+    }
+}
+
+
+
 
 #clients .container-fluid .sub-features .carousel-indicators{
     right: 0;
@@ -869,12 +896,14 @@ body{
 }
 
 #clients .container-fluid .sub-features p{
-    margin: 40px 0;
+    margin: 10px 0;
 }
 
 
 
-
+/*#clients .testi-comment{*/
+    /*background: url("../img/clients/quotes.svg");*/
+/*}*/
 
 
 /* =====================================================================================================================
@@ -1271,16 +1300,23 @@ body{
 
 
 
-#contact .contact-bg .form-container .form-group button {
+#contact .contact-bg .form-container .form-group input[type="submit"] {
     width: 70%;
     max-width: 100%;
     border-radius: 30px;
-    border: none;
     background-color: #fff;
     height: 50px;
+    padding: 0;
     line-height: 50px;
     color: #ff694c;
     margin-top: 20px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+#contact .contact-bg .form-container .form-group input[type="submit"]:hover {
+    background-color: #ff694c;
+    color: #fff;
 }
 
 #contact .contact-bg .form-container .form-group button:focus {
