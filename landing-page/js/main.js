@@ -14,6 +14,20 @@
 //
 //
 
+
+//Floating labels//
+
+$("input[type ='text']").click(function(){
+    var $this = $(this);
+    $this.attr("placeholder", "");
+    $this.parent().find(".float-label").addClass("label-top");
+
+});
+
+//Ends here//
+
+
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;

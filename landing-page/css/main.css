@@ -551,6 +551,11 @@ body{
     outline: none;
 }
 
+#pricing-table ul li .pricing-box:focus {
+    outline: none;
+}
+
+
 
 /*======Detailed Services====*/
 
@@ -871,6 +876,7 @@ body{
     height: 220px;
     overflow: hidden;
 }
+
 
 @media screen and (max-width: 600px) {
     #clients .container-fluid .sub-features{
@@ -1431,6 +1437,279 @@ body{
 }
 
 
-.facebook{
-    font-size: 100px;
+
+
+
+
+/* =====================================================================================================================
+                                          Modal form
+ ===================================================================================================================*/
+
+.modal-form{
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
 }
+
+.modal-form .modal-header{
+    border: none;
+    padding: 0;
+    min-height: 0;
+}
+
+.modal-form .modal-header button{
+    width: 50px;
+    height: 50px;
+    background-color: #ff694c;
+    border-radius: 50%;
+    margin-top: -25px;
+    right: -20px;
+    position: absolute;
+    opacity: 1;
+    font-size: 20px;
+    color: #fff;
+}
+
+.modal-form .modal-header button:focus{
+    outline: none;
+}
+
+.modal-form .modal-header span {
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+.modal-form .modal-content{
+    width: 100%;
+    border-radius: 10px;
+    background: url("../img/footer.png");
+    background-color: #fff;
+    animation: move 15s linear 1s infinite;
+    animation-fill-mode: both;
+
+
+}
+
+
+.modal-form .form-container {
+    width: 350px;
+    max-width: 100%;
+    max-height: 100%;
+    /*background-color: #ff694c;*/
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 30px 30px;
+    color: #565a5c;
+    /*float: right;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);*/
+}
+
+
+.modal-form .form-container h3 {
+    margin: 30px 30px 60px 5px;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.modal-form .form-container input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #ff694c;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+    font-weight: 800;
+    transition: opacity .3s ease;
+}
+
+.modal-form .form-container input[type="submit"]:hover {
+    opacity: .7;
+}
+
+.rocket{
+    position: relative;
+}
+
+.rocket-tail{
+    position: absolute;
+    left: 19%;
+    top: 77%;
+    animation: rocket-tail 15s linear 1s infinite;
+    animation-fill-mode: both;
+}
+
+
+.rocket-tail img{
+    animation: rocket-tail 1s linear 1s infinite;
+    animation-fill-mode: both;
+}
+
+
+
+
+@-webkit-keyframes rocket-tail  {
+    0% {
+        bottom: 0;
+
+    }
+
+    10%{
+        bottom: 10px;
+    }
+
+
+    20%{
+        bottom: 20px;
+    }
+
+
+    30%{
+        bottom: 30px;
+    }
+
+    40%{
+        bottom: 40px;
+    }
+
+    50%{
+        bottom: 50px;
+    }
+
+
+}
+
+
+/*@-moz-keyframes rocket-tail  {*/
+    /*0% {*/
+        /*transform: rotateX(20deg);*/
+
+    /*}*/
+
+    /*25%{*/
+        /*transform: rotateX(18deg);*/
+    /*}*/
+
+    /*50%{*/
+        /*transform: rotateX(16deg);*/
+    /*}*/
+
+    /*75%{*/
+        /*transform: rotateX(12deg);*/
+    /*}*/
+
+    /*100%{*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+
+/*}*/
+
+
+/*@keyframes rocket-tail  {*/
+    /*0% {*/
+        /*transform: rotateX(20deg);*/
+
+    /*}*/
+
+    /*25%{*/
+        /*transform: rotateX(18deg);*/
+    /*}*/
+
+    /*50%{*/
+        /*transform: rotateX(16deg);*/
+    /*}*/
+
+    /*75%{*/
+        /*transform: rotateX(12deg);*/
+    /*}*/
+
+    /*100%{*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+
+/*}*/
+
+
+
+/*=========Floating labels=============*/
+
+
+.f-input-group{
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.float-input{
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: transparent;
+}
+
+
+.float-input:focus{
+    outline: none;
+}
+
+
+.float-label{
+    color: #565a5c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    font-size: 12px;
+}
+
+
+.label-top{
+    visibility: visible;
+    opacity: 1;
+    top: -20px;
+}
+
+.f-input-group span i{
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #c1c0c1;
+
+
+}
+
+
+
+.f-input-group > input#Message {
+    height: 100px;
+
+}
+
+
+::-webkit-input-placeholder{
+    color: #565a5c;
+}
+
+::-moz-input-placeholder{
+    color: #565a5c;
+}
+
+/*==============Floating labels ends here========*/
