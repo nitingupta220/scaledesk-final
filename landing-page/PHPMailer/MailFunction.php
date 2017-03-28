@@ -10,10 +10,10 @@ $name=$_POST['name'];
 // echo $phone;
 // echo $name;
 // die;
-// $emailadmin="sanchit2411@gmail.com";
-// $emailadmin2="priyanka@scaledesk.com";
-// $emailsubadmin="lakhani@scaledesk.com";
-$emailadmin="nkscoder@gmail.com";
+$emailadmin="sanchit2411@gmail.com";
+$emailadmin2="priyanka@scaledesk.com";
+$emailsubadmin="lakhani@scaledesk.com";
+// $emailadmin="nkscoder@gmail.com";
 
 $subject = "Contact Us";
 $Usersubject="Thank You for contacting Scaledesk";
@@ -79,8 +79,8 @@ $mail1->setFrom('nkscoder@gmail.com', 'Scaledesk Web Studio');
 $mail->addAddress($email, $name);     // Add a recipient
 //$mail1->setFrom('contact@scaledesk.com', 'Scaledesk');
 $mail1->addAddress($emailadmin);     // Add a recipient
-// $mail1->addAddress($emailadmin2);     // Admin mail
-// $mail1->addAddress($emailsubadmin);  // sub admin mail
+$mail1->addAddress($emailadmin2);     // Admin mail
+$mail1->addAddress($emailsubadmin);  // sub admin mail
 
 $mail->Subject = $Usersubject;
 $mail->Body    = $messageUsers;
