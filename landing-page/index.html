@@ -82,26 +82,26 @@
 
 
             </div>
-        </div> <!--row Ends Here-->
+        </div> --> <!--row Ends Here-->
 
         <div class="row">
             <div class="col-md-6">
 
-                <form action="" class="form-container">
+                <form action="PHPMailer/MailFunction.php" class="form-container" method="POST">
                     <h4>Web development packages starts from <strong>₹14,999</strong></h4>
                     <h4>DISCUSS YOUR PROJECT with our expert web developers</h4>
 
                     <div class="form-group">
-                        <input type="text"  placeholder="Your Name" />
+                        <input type="text"  name="name" required placeholder="Your Name" />
 
                     </div>
 
                     <div class="form-group">
-                        <input type="email"  placeholder="Email" />
+                        <input type="email" name="email" required placeholder="Email" />
                     </div>
 
                     <div class="form-group">
-                        <input type="number"  placeholder="Contact Number" />
+                        <input type="number"  name="phone" required placeholder="Contact Number" />
                     </div>
 
                     <div class="form-group">
@@ -1083,18 +1083,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="" class="form-container">
+                    <form action="PHPMailer/MailFunction.php" class="form-container" method="POST">
                         <div class="form-group">
-                            <input type="text"  placeholder="Your Name" />
+                            <input type="text" name="name" required  placeholder="Your Name" />
 
                         </div>
 
                         <div class="form-group">
-                            <input type="email"  placeholder="Email" />
+                            <input type="email"  name="email" required placeholder="Email" />
                         </div>
 
                         <div class="form-group">
-                            <input type="number"  placeholder="Contact Number" />
+                            <input type="number"  name="phone" required placeholder="Contact Number" />
                         </div>
 
                         <div class="form-group">
@@ -1175,18 +1175,18 @@
 
                     <div class="col-md-6">
 
-                        <form action="" class="form-container">
+                        <form action="PHPMailer/MailFunction.php" class="form-container">
                             <h3>Start Your Project</h3>
                             <div class="f-input-group">
                                 <label class="float-label" for="name" >Name</label>
-                                <input type="text" id="name"  class="float-input" placeholder="Name">
+                                <input type="text" id="name" required name="name" class="float-input" placeholder="Name">
                                 <span><i class="fa fa-user"></i></span>
 
                             </div>
 
                             <div class="f-input-group">
                                 <label  class="float-label" for="Email">Email Id</label>
-                                <input type="text" id="email"  class="float-input" placeholder="Email Id">
+                                <input type="email" id="email" required name="email"  class="float-input" placeholder="Email Id">
                                 <span><i class="fa fa-envelope"></i></span>
 
 
@@ -1194,7 +1194,7 @@
 
                             <div class="f-input-group">
                                 <label class="float-label"  for="number" >Mobile</label>
-                                <input type="text" id="number"  class="float-input" placeholder="Phone Number">
+                                <input type="text" id="number" name="phone"  required class="float-input" placeholder="Phone Number">
                                 <span><i class="fa fa-phone"></i></span>
 
 
