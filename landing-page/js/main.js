@@ -73,3 +73,11 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
+
+
+//Rocket //
+
+$(".modal-body").click(function(){
+    $(".modal-body").addClass('.rocket-gone');
+
+});
