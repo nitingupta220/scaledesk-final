@@ -347,8 +347,7 @@ body{
 
 #services .service-container li:nth-of-type(5){
     border-bottom: 1px solid transparent;
-    position: relative;
-    top: -10px;
+
 }
 
 #services .service-container li:nth-of-type(6){
@@ -954,6 +953,7 @@ body{
     -moz-column-gap: 0;
         column-count: 3;
         column-gap: 0;
+    background-color: #1f1f1f;
 
 }
 
