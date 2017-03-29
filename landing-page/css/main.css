@@ -43,7 +43,7 @@ body{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
     background-color: #fff;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -59,7 +59,7 @@ body{
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /*.navbar-default{*/
@@ -70,7 +70,7 @@ body{
     background-color: transparent;
     box-shadow: none;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -91,7 +91,7 @@ body{
     border-radius: 20px;
     border: 1px solid #ff694c;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -347,6 +347,8 @@ body{
 
 #services .service-container li:nth-of-type(5){
     border-bottom: 1px solid transparent;
+    position: relative;
+    top: -10px;
 }
 
 #services .service-container li:nth-of-type(6){
