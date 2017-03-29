@@ -1041,7 +1041,22 @@ body{
 
 
 
-
+@media screen and (max-width: 600px) {
+    #portfolio .owl-carousel .owl-item .item{
+        display: -webkit-flex;
+        display: -moz-flex;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        min-height: 530px;
+        max-height: 100%;
+        height: 100%;
+        background-color: #1f1f1f;
+    }
+}
 
 
 
@@ -1154,7 +1169,7 @@ body{
 
 .img-gallery-mobile .main-container:hover .overlay-txt:nth-of-type(1){
     height: 100%;
-    background-color: #ff694c;
+    background-color: #1f1f1f;
     padding: 20px;
 }
 
@@ -1181,43 +1196,6 @@ body{
 }
 
 
-/*==*/
-
-
-/* ---- grid ---- */
-
-.grid {
-    background: #DDD;
-}
-
-/* clear fix */
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-/* ---- .element-item ---- */
-
-
-#portfolio.demo li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-#portfolio li img {
-    height: 200px;
-    border: 5px solid #999;
-    margin: 5px;
-}
-
-#portfolio .highlight{
-    overflow: auto;
-}
-
-#portfolio .heart{
-    color: red;
-}
 
 
 /* =====================================================================================================================
@@ -1590,57 +1568,6 @@ body{
 
 
 }
-
-
-/*@-moz-keyframes rocket-tail  {*/
-    /*0% {*/
-        /*transform: rotateX(20deg);*/
-
-    /*}*/
-
-    /*25%{*/
-        /*transform: rotateX(18deg);*/
-    /*}*/
-
-    /*50%{*/
-        /*transform: rotateX(16deg);*/
-    /*}*/
-
-    /*75%{*/
-        /*transform: rotateX(12deg);*/
-    /*}*/
-
-    /*100%{*/
-        /*transform: rotate(0deg);*/
-    /*}*/
-
-/*}*/
-
-
-/*@keyframes rocket-tail  {*/
-    /*0% {*/
-        /*transform: rotateX(20deg);*/
-
-    /*}*/
-
-    /*25%{*/
-        /*transform: rotateX(18deg);*/
-    /*}*/
-
-    /*50%{*/
-        /*transform: rotateX(16deg);*/
-    /*}*/
-
-    /*75%{*/
-        /*transform: rotateX(12deg);*/
-    /*}*/
-
-    /*100%{*/
-        /*transform: rotate(0deg);*/
-    /*}*/
-
-/*}*/
-
 
 
 /*=========Floating labels=============*/
