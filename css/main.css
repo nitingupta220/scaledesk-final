@@ -34,15 +34,152 @@ section{
    =================================================================================================================== */
 
 
-.custom-navbar{
-    margin: 0;
-    height: 80px;
+
+header{
+    position: fixed;
     z-index: 1;
-    border: 0;
-    box-shadow: none;
-    background: transparent;
+    width: 100%;
+    height: 60px;
 }
 
+header.fill{
+    background-color: #fff;
+    height: 60px;
+    border: 1px solid #000;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.menu-left,
+.menu-right{
+    padding: 20px 30px;
+}
+
+header nav .menu-left{
+    float: left;
+}
+
+header nav .menu-right{
+    float: right;
+}
+
+.n-toggle{
+    cursor: pointer;
+}
+
+.off-canvas{
+    clear: both;
+    position: fixed;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 80%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    z-index: 99;
+    transition: all .5s ease-in-out;
+}
+
+.off-canvas.open{
+    transform: translateY(0);
+}
+
+
+.off-canvas .menu-content li{
+    padding: 20px;
+
+}
+
+.off-canvas .menu-content li a{
+    -webkit-animation: item-reveal 5s ease-in-out;
+        animation: item-reveal 5s ease-in-out;
+
+
+}
+
+.off-canvas .menu-content{
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+        justify-content: center;
+    -webkit-align-items: center;
+        align-items: center;
+        height: 100%;
+}
+
+.off-canvas .n-close li i{
+    float: right;
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    font-size: 35px;
+}
+
+
+@-webkit-keyframes  item-reveal {
+    0%{
+        opacity: 0;
+
+
+    }
+
+    25%{
+        opacity: .4;
+    }
+
+
+    50%{
+        opacity: .6;
+    }
+
+
+    75%{
+        opacity: .8;
+    }
+
+
+    100%{
+        opacity: 1;
+    }
+
+
+
+
+}
+
+@keyframes  item-reveal {
+    0%{
+        opacity: 0;
+
+
+    }
+
+    25%{
+        opacity: .4;
+    }
+
+
+    50%{
+        opacity: .6;
+    }
+
+
+    75%{
+        opacity: .8;
+    }
+
+
+    100%{
+        opacity: 1;
+    }
+
+
+
+
+}
 
 /* =====================================================================================================================
                                             Navigation Section
@@ -559,21 +696,11 @@ section{
  ===================================================================================================================*/
 
 
-#footer .footer-bg {
-    padding: 15% 5%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 #footer .footer-bg .social-icons{
     padding: 0;
+    margin-top: 40px;
 }
 
 
@@ -581,8 +708,9 @@ section{
     text-align: center;
     list-style-type: none;
     display: inline-block;
-    margin-right: 20px;
-    margin-top: 30px;
+    margin-right: 0;
+    width: 80px;
+    height: 60px;
 }
 
 #footer .footer-bg .social-icons li a{
@@ -590,13 +718,39 @@ section{
     font-size: 20px;
 }
 
-#footer .footer-bg p {
-    margin-top: 30px;
+#footer .footer-bg p a {
+    color: #999;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#footer .footer-bg .social-icons li a,
+#footer .footer-bg  p > a  {
+    position: relative;
+    padding: 5px 10px;
 }
 
 
-#footer .footer-bg p a {
-    color: #999;
+#footer .footer-bg .social-icons li a:before,
+#footer .footer-bg  p > a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ff694c;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    transition: all .4s ease-in-out;
+}
+
+#footer .footer-bg .social-icons li a:hover:before,
+#footer .footer-bg  p > a:hover:before
+{
+    width: 100%;
+    right: auto;
+    left: 0;
+
 }
 
 
@@ -621,6 +775,14 @@ section{
     padding: 0 10%;
 }
 
+#services .main-title span:nth-of-type(2){
+    margin-left: 23.5%;
+}
+
+#services .main-title span:nth-of-type(3){
+    margin-left: -15%;
+
+}
 
 .service-title{
     color: #ff694c;
@@ -655,8 +817,9 @@ section{
 }
 
 #service-des .container .tab-navigation .line-through span ul.nav-tabs {
-    margin-top: -48px;
+    margin-top: -27px;
     border: none;
+    background-color: #fff;
 }
 
 .nav-tabs>li>a{
@@ -766,7 +929,7 @@ section{
    ========================================================================== */
 
 #service-feature .container .feature-1:not(:first-of-type), .feature-2, .feature-3 {
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 #service-feature .container   h3{
@@ -786,12 +949,13 @@ section{
     width: 100%;
     height: 300px;
     overflow: hidden;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
+    padding: 0;
 
 }
 
 #service-portfolio .port-effect img {
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
     transform: scale(1);
 
 }
@@ -799,10 +963,9 @@ section{
 #service-portfolio .port-effect .port-overlay{
     position: absolute;
     left: 0;
-    top: 0;
+    /*top: 0;*/
     background-color: #ff694c;
-    transition: .3s ease-in-out;
-    padding: 10px;
+    transition: .5s ease-in-out;
     text-align: center;
     display: -webkit-flex;
     display: -moz-flex;
@@ -815,22 +978,31 @@ section{
     overflow: hidden;
     width: 100%;
     cursor: pointer;
-    height: 100%;
+    /*height: 100%;*/
     transform-origin: right;
     backface-visibility: hidden;
     box-sizing: border-box;
-    right: -100%;
+    right: auto;
+    /*opacity: 0;*/
+    height: 100%;
+    padding: 10px;
+    bottom: -100%;
 }
 
 
 #service-portfolio .port-effect:hover .port-overlay  {
-    right: 0;
-    height: 100%;
+    /*height: 100%;*/
+    /*opacity: 1;*/
+    bottom: 0;
 }
 
 #service-portfolio .port-effect:hover img  {
     transform: scale(1.3);
 }
+
+
+
+
 
 
 /* =====================================================================================================================
@@ -1032,8 +1204,5 @@ Contact us page Starts Here
 }
 
 
-#contact-us #footer .footer-bg {
-    padding: 10%;
-}
 
 
