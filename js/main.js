@@ -1,5 +1,5 @@
 
-//Floating labels//
+//====================Floating labels=====================//
 
 $("input[type ='text']").click(function(){
     var $this = $(this);
@@ -11,7 +11,8 @@ $("input[type ='text']").click(function(){
 //Ends here//
 
 
-//Navigation//
+
+//====================Navigation========================//
 
 $(function(){
     $('.n-toggle').on('click', function(){
@@ -28,27 +29,34 @@ $(function(){
 });
 
 
-//$(document).click(function(){
-//    if ($('off-canvas').hasClass('open')){
-//        $('off-canvas').removeClass('open');
-//
-//
-//    }
-//});
 
+//Header fill color on scroll
 
-//$(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
 
         if (scroll >= 500){
-            $("header").addClass('.fill');
+            $("header").addClass('fill');
 
         }else {
-            $("header").removeClass('.fill');
+            $("header").removeClass('fill');
         }
 
     });
+
+
+
+// This block of code checks if "main-title class" has
+// more than 1 span and apply display flex (for vertical center on  #hero-section id).
+
+        $('.main-title').each(function(){
+
+            if ($('> span' ,this ).length <= 2 ){
+                $('#hero-section').css({"display": "-webkit-flex" , "justify-content": "center" , "align-items": "center"});
+            }
+
+        });
+
 
 
 
