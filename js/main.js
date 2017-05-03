@@ -28,6 +28,20 @@ $(function(){
 
 });
 
+$(function(){
+    $('.form-toggle').on('click', function(){
+        $('.info-form').toggleClass('show');
+
+    });
+
+    if($('.info-form').hasClass('show')){
+        $(document).click(function(){
+            $('.info-form').removeClass('show');
+
+        });
+    }
+});
+
 
 
 //Header fill color on scroll
@@ -56,6 +70,12 @@ $(function(){
             }
 
         });
+
+
+
+
+
+
 
 
 
