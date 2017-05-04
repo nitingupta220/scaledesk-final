@@ -29,8 +29,17 @@ section{
     padding: 5% 0;
 }
 
-.section{
-    /*height: 100vh;*/
+.section:not(:last-child){
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+
 }
 
 section:nth-of-type(1){
@@ -73,7 +82,7 @@ header{
 header.fill{
     background-color: #fff;
     height: 80px;
-    transition: all .4s ease-in-out;
+    transition: all .3s ease-in-out;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.23), inset 1px 1px 0 0 hsla(0,0%,100%,.2);
 }
 
@@ -799,6 +808,7 @@ header nav .menu-right{
     text-align: center;
     animation: move 15s linear 1s infinite;
     animation-fill-mode: both;
+    width: 100%;
 }
 
 
@@ -853,20 +863,25 @@ header nav .menu-right{
     max-width: 500px;
     min-width: 335px;
     margin: 20px auto;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     color: #fff;
-    transform: translateY(100%);
+    /*transform: translateY(100%);*/
+    transform: scale(0);
     visibility: hidden;
     opacity: 0;
-    transition: all .5s ease;
-    transform-origin: top;
-
+    transition: all .4s ease-in-out;
+    transform-origin: bottom;
+    border-radius: 50%;
 }
 
-#contact .info-form.show{
+#contact .info-form.shows{
     visibility: visible;
     opacity: 1;
-    transform: translateY(0);
+    /*transform: translateY(0);*/
+    transform: scale(1);
+    transition: all .4s ease-in-out;
+    border-radius: 8px;
+
 }
 
 #contact .info-form .form-group input{
@@ -900,7 +915,18 @@ header nav .menu-right{
                                           Footer Section
  ===================================================================================================================*/
 
-
+#footer .footer-bg{
+    height: 70vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 #footer .footer-bg .social-icons{

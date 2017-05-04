@@ -30,13 +30,13 @@ $(function(){
 
 $(function(){
     $('.form-toggle').on('click', function(){
-        $('.info-form').toggleClass('show');
+        $('.info-form').toggleClass("shows" ,1000 ,"bounce");
 
     });
 
-    if($('.info-form').hasClass('show')){
+    if($('.info-form').hasClass('shows')){
         $(document).click(function(){
-            $('.info-form').removeClass('show');
+            $('.info-form').removeClass('shows');
 
         });
     }
