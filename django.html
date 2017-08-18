@@ -41,11 +41,11 @@
                                         Navigation section
 --------------------------------------------------------------------------------------------------------------->
 
-<header>
-    <nav>
-        <ul class="menu-left">
-            <li>
-                <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="100%" viewBox="0 0 113.25 31">
+    <header>
+        <nav>
+            <ul class="menu-left" style="display: block !important;">
+                <li>
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="150" height="100%" viewBox="0 0 113.25 31">
                     <path fill="#373737" d="M1.08 27.346l8.048-6.407-8.05-6.125v-1.96l9.52 7.21v1.785l-9.52 7.455"></path>
                     <path fill="#D35931" d="M1.096 10.65V8.865l9.485-7.49V3.37L2.567 9.74l8.015 6.125v1.96"></path>
                     <g fill="#D35931">
@@ -56,39 +56,135 @@
                     </g>
                 </svg>
                 </a>
-            </li>
+                </li>
 
-        </ul>
+            </ul>
 
-        <ul class="menu-right">
-            <li>
-                <svg class="n-toggle" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="173.277 80.268 867.086 747.074">
+            <ul class="menu-right" id="open" style="display: block !important;">
+                <li>
+                    <svg class="n-toggle" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="173.277 80.268 867.086 747.074">
                     <path fill="#373a5e" stroke="#000" stroke-miterlimit="10" d="M990 191.436c0 33.132-26.868 60-60 60H270c-33.144 0-60-26.868-60-60 0-33.132 26.856-60 60-60h660c33.132 0 60 26.868 60 60zM990 462.528c0 33.132-26.868 60-60 60H270c-33.144 0-60-26.868-60-60 0-33.132 26.856-60 60-60h660c33.132 0 60 26.868 60 60zM990 733.62c0 33.144-26.868 60-60 60H270c-33.144 0-60-26.856-60-60 0-33.145 26.856-60 60-60h660c33.132 0 60 26.856 60 60z"/>
                 </svg>
-            </li>
-        </ul>
-
-
-
-        <div class="off-canvas">
-            <ul class="menu-content">
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
+                </li>
             </ul>
 
-            <ul class="n-close">
-                <li><i class="fa fa-times n-toggle"></i></li>
-            </ul>
 
-        </div>
+            <nav class="cd-nav-container" id="cd-nav">
+                <header id="header">
+                    <h3 class="text-center">MENU</h3>
+                    <a href="#" class="cd-close-nav" id="close">Close</a>
+                    <a href="#" class="btn btn-default btn-lg" id="back">Back</a>
+                </header>
+                <ul class="cd-nav list-unstyled" id="mainmenu">
+                    <li data-menu="index">
+                        <a href="#" id="toggle">
+                            <span>
+                            <i class="glyphicon glyphicon-home"></i>
+                        </span>
+                            <p>Our Services</p>
+                        </a>
+                    </li>
+                    <li data-menu="profile">
+                        <a href="#">
+                            <span>
+                            <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                    <li data-menu="inbox">
+                        <a href="#">
+                            <span>
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                            <p>Hire Us</p>
+                        </a>
+                    </li>
+                    <li data-menu="#">
+                        <a href="#">
+                            <span>
+                            <i class="glyphicon glyphicon-tasks"></i>
+                        </span>
+                            <p>Portfolio</p>
+                        </a>
+                    </li>
+                    <li data-menu="#">
+                        <a href="#">
+                            <span>
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </span>
+                            <p>Careers</p>
+                        </a>
+                    </li>
+                    <li data-menu="calendar">
+                        <a href="#">
+                            <span>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                            <p>Contact Us</p>
+                        </a>
+                    </li>
+                </ul>
 
+                <ul class="cd-nav list-unstyled subcategory">
+                    <li class="text-center">
+                        <h3>App Development</h3>
+                        <hr>
+                        <h4>Hybrid App Development</h4>
+                        <h4>Mobile Website Development</h4>
+                        <h4>App Launch Strategy</h4>
+                        <h4>Maintaenance & Support</h4>
+                    </li>
+                    <li class="text-center">
+                        <h3>Web Developnent</h3>
+                        <hr>
+                        <h4>Ecommerce Development</h4>
+                        <h4>Custom Responsive Web Development</h4>
+                        <h4>Magento Ecommerce Development</h4>
+                        <h4>WordPress Web Development</h4>
+                        <h4>Django - Python Development</h4>
+                    </li>
+                    <li class="text-center">
+                        <h3>Designing</h3>
+                        <hr>
+                        <h4>User Interface Designing</h4>
+                        <h4>Logo Designing</h4>
+                        <h4>Brochure Designing</h4>
+                        <h4>Mobile UI/UX Design & Prototyping</h4>
+                        <h4>Web UI/UX Design & Prototyping</h4>
+                    </li>
+                    <li class="text-center">
+                        <h3>Strategy Consulting</h3>
+                        <hr>
+                        <h4>Market Research</h4>
+                        <h4>Business Consulting</h4>
+                        <h4>Server Architecture Consulting</h4>
+                        <h4>eCommerce Consulting</h4>
+                    </li>
+                    <li class="text-center">
+                        <h3>Cloud Service</h3>
+                        <hr>
+                        <h4>Amazon Web Services</h4>
+                        <h4>Cloud Deployment</h4>
+                        <h4>Cost Optimization</h4>
+                        <h4>Speed Optimization</h4>
+                        <h4>Maintaenance & Support</h4>
+                    </li>
+                    <li class="text-center">
+                        <h3>Testing & QA</h3>
+                        <hr>
+                        <h4>Web Application Testing</h4>
+                        <h4>Mobile App Testing</h4>
+                        <h4>eCommerce Optimization</h4>
+                        <h4>Website Audits</h4>
+                    </li>
+                </ul>
 
-    </nav>
-</header>
+            </nav>
+            <div class="cd-overlay"></div>
+
+        </nav>    
+    </header>
 
 
 <div id="services" class="python">
@@ -369,19 +465,44 @@
     <!--------------------------------------------------------------------------------------------------------------
                                             Contact us
     --------------------------------------------------------------------------------------------------------------->
-    <section id="contact">
+    <div class="section" id="contact">
         <div class="contact-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Let's Get Started </h2>
+            <div style="width: 100%;">
+                <h2 style="font-size: 50px;position: relative;top: 250px;"><span class="form-toggle">Let's Get Started</span> </h2>
+
+                <form action="" class="info-form">
+                    <i class="fa fa-times fa-2x close-form" style="float: right;margin-bottom: 40px;"></i>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control">
+
                     </div>
-                </div> <!--row Ends Here-->
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email" class="form-control">
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="number" placeholder="Your Number" class="form-control">
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+
+                    </div>
+
+
+                </form>
             </div>
-        </div> <!--container ends here-->
 
-    </section> <!--section ends here-->
 
+        </div>
+
+
+    </div>
 
 
 
