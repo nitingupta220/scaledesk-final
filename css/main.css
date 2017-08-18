@@ -1747,6 +1747,7 @@ xshadow layer
 #service-portfolio .port-effect img {
     transition: .5s ease-in-out;
     transform: scale(1);
+    height: 300px;
 }
 
 #service-portfolio .port-effect .port-overlay {
